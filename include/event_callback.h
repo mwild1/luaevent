@@ -28,7 +28,9 @@
 typedef struct {
 	struct event ev;
 	le_base* base;
+	int selfRef;
 	int callbackRef;
+	int running;
 	struct timeval timeout;
 } le_callback;
 
